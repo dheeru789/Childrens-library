@@ -1,18 +1,18 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: ["class"],
   content: [
-    './index.html',
-    './src/**/*.{js,ts,jsx,tsx}',
+    "./src/**/*.{ts,tsx}",
+    "./index.html"
   ],
   theme: {
     extend: {
       colors: {
-        border: '#e5e7eb', // now you can use border-border
+        border: "hsl(240, 4.9%, 83.9%)", // <-- Add this line
       },
     },
   },
   plugins: [],
-}
-
-export default config
+};
+export default config;
